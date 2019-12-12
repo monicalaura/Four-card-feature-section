@@ -1,0 +1,212 @@
+@import './config';
+
+
+body{
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    font-size:15px;
+}
+
+header{
+    text-align:center;
+    padding: 2rem 0.8rem;
+    margin-top:1rem; 
+    
+
+    p{
+        margin-top:1.5rem;
+        color: $grayish-blue;
+        line-height:1.5;
+        padding:0.8rem;        
+
+    }
+    
+    h1{
+        
+        color:$grayish-blue;
+        @include thin;
+        font-size:1.4rem;
+       
+        
+    }
+
+
+    h2{
+        margin-top:1rem;
+        color:$dark-blue;
+        @include bold;
+        font-size:1.4rem;
+    }
+
+
+}
+
+section { 
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    
+  
+
+    .col-big{
+    padding:0;
+    }
+      
+
+    .icon{
+        display:flex;
+        width:55px;
+        margin-left:auto;
+        margin-top:1.5rem;
+    }
+
+    
+
+    div{
+        width: 90%;
+        margin: auto;
+        @include border-radius(4px);
+        padding: 1.5rem 1.7rem;
+        
+       
+
+        p{
+            line-height:1.4;
+            margin-top:1rem;
+            color: $grayish-blue;
+        }
+
+        h3{
+            color:$dark-blue;
+            @include bold;
+        } 
+    }
+
+    .supervisor{
+       
+        @include border-top($light-blue);
+        @include box-shadow;
+
+        
+    }
+
+    .team{
+        width:100%;
+        
+        @include border-top($red);
+        @include box-shadow;
+    }
+
+    .karma{
+        width:100%;
+       
+        @include border-top($orange);
+        @include box-shadow;
+    }
+
+    .calculator{
+       
+        @include border-top($blue);
+        @include box-shadow;
+    }
+
+
+  }
+
+  footer .attribution{
+    color:$grayish-blue;
+    @include thin;
+    font-size:13px;
+    text-align:center;
+    margin-top:4rem;
+  }
+
+
+  //MEDIA min-width: 768px
+
+  @include media-md{
+    
+    header{ 
+        margin-top:0.2rem; 
+
+        h1,h2{
+            font-size:2rem;
+        }
+         
+        p{   
+            width: 40% ;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            margin:0 auto;
+         }
+    }
+
+
+    section{
+        display: flex;
+        flex-direction:row;
+        padding:0 2rem !important;
+        margin-top: -1rem !important;
+        justify-content: space-evenly;
+        
+    
+
+      .col-big{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 30% !important;
+         
+        
+      } 
+      
+      .supervisor{
+
+        display:flex;
+        flex-direction:column;
+        margin: auto;
+        width: 30% !important;
+        height: 50%;
+                    
+        }
+
+        .team{
+        
+        display:flex;
+        flex-direction:column;
+         
+       
+           
+        }
+
+        .karma{
+        
+        display:flex;
+        flex-direction:column;
+        margin-top:10%;
+       
+        
+        }
+
+        .calculator{
+
+            display:flex;
+            flex-direction:column;
+             margin: auto;
+             width: 30% !important;
+             height: 50%;
+        }
+             
+        
+            
+        
+        }
+    
+}
+  
+  
+
+
+

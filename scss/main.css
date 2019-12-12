@@ -1,0 +1,204 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  font-size: 15px;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0.8rem;
+  margin-top: 1rem;
+}
+
+header p {
+  margin-top: 1.5rem;
+  color: #a3a5ae;
+  line-height: 1.5;
+  padding: 0.8rem;
+}
+
+header h1 {
+  color: #a3a5ae;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
+header h2 {
+  margin-top: 1rem;
+  color: #4c4e61;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+section .col-big {
+  padding: 0;
+}
+
+section .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55px;
+  margin-left: auto;
+  margin-top: 1.5rem;
+}
+
+section div {
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 1.5rem 1.7rem;
+}
+
+section div p {
+  line-height: 1.4;
+  margin-top: 1rem;
+  color: #a3a5ae;
+}
+
+section div h3 {
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+section .supervisor {
+  border-top: 4px solid #33e2eb;
+  -webkit-box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+          box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+}
+
+section .team {
+  width: 100%;
+  border-top: 4px solid #ea5353;
+  -webkit-box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+          box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+}
+
+section .karma {
+  width: 100%;
+  border-top: 4px solid #fcaf4a;
+  -webkit-box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+          box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+}
+
+section .calculator {
+  border-top: 4px solid #549ef2;
+  -webkit-box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+          box-shadow: 7px 13px 22px -16px rgba(0, 0, 0, 0.53);
+}
+
+footer .attribution {
+  color: #a3a5ae;
+  font-weight: 200;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin-top: 0.2rem;
+  }
+  header h1, header h2 {
+    font-size: 2rem;
+  }
+  header p {
+    width: 40%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+  }
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 2rem !important;
+    margin-top: -1rem !important;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section .col-big {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    width: 30% !important;
+  }
+  section .supervisor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 30% !important;
+    height: 50%;
+  }
+  section .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .karma {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10%;
+  }
+  section .calculator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 30% !important;
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

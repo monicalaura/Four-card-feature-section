@@ -1,0 +1,57 @@
+
+$red: hsl(0, 78%, 62%);         
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$light-blue: hsl(183, 82%, 56%);
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%); 
+$gray-back: hsl(206, 16%, 94%);
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+     } 
+
+ @mixin box-shadow{
+    box-shadow: 7px 13px 22px -16px rgba(0,0,0,0.53);
+ }  
+ 
+ @mixin border-top($color){
+     border-top: 4px solid $color;
+ }
+
+ @mixin medium{
+     font-weight:400;
+ }
+
+ @mixin thin{
+    font-weight:200;
+}
+
+@mixin bold{
+    font-weight:600;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+   }
+
+   @mixin media-md{
+    @media screen and(min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg{
+ @media screen and(min-width: 1024px){
+     @content;
+ }
+}
+
+@mixin media-xl{
+ @media screen and(min-width: 1600px){
+     @content;
+ }
+}
